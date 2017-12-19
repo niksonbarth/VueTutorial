@@ -31,18 +31,14 @@ Vue.component('friend-component',{
 const app = new Vue({
     el: "#app",
     data: {
-      friends: [
-        {
-            first: "Bobby",
-            last: "Boone",
-            age: 25
-        },
-        {
-            first: "John",
-            last: "Boby",
-            age: 35,
-        }
-      ],    
+      friends: [],    
+    },
+    mounted(){
+        fetch("http://rest.learncode.academy/api/vue-5/friends")
+            .then(reponse => reponse.json())
+            .then((data) => {
+                this.friends = data;
+            })
     },
     template: `
       <div>
