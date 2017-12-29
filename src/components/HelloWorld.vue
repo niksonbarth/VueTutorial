@@ -1,22 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <Module1/>
-    <Module2/>
+    <!-- <Module1/>
+    <Module2/> -->
   </div>
 </template>
 
 <script>
-import Module1 from "./Module1"
-import Module2 from "./Module2"
+// import Module1 from "./Module1"
+// import Module2 from "./Module2"
 
 
 export default {
   name: 'HelloWorld',
-  components:{
-    Module1,
-    Module2
-  },
+  // components:{
+  //   Module1,
+  //   Module2
+  // },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
