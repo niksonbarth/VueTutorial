@@ -1,4 +1,4 @@
-# vue-tutorial
+# vue-8-store-pattern
 
 > A Vue.js project
 
